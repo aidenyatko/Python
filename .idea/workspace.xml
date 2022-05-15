@@ -13,9 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0431a0e-f529-4e5b-bcf0-112da37126fa" name="Changes" comment="Часть первая без итогов">
-      <change beforePath="$PROJECT_DIR$/lesson_008/01_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_008/01_family.py" afterDir="false" />
-    </list>
+    <list default="true" id="c0431a0e-f529-4e5b-bcf0-112da37126fa" name="Changes" comment="Добавил кота" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
@@ -43,15 +46,15 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/courses/IT/Python/SkillBox_Python/Practice",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/courses/IT/Python/SkillBox_Python/Practice&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\courses\Python\SkillBox Python\Practice" />
@@ -192,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.01_family" />
-        <item itemvalue="Python.03_man_ans_cat" />
-        <item itemvalue="Python.01_mastermind" />
-        <item itemvalue="Python.01_mastermind (1)" />
         <item itemvalue="Python.nim_engine" />
+        <item itemvalue="Python.03_man_ans_cat" />
+        <item itemvalue="Python.01_mastermind (1)" />
+        <item itemvalue="Python.01_mastermind" />
+        <item itemvalue="Python.01_family" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652639386900</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавил кота">
+      <created>1652714385293</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652714385293</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +282,9 @@
     </ignored-roots>
     <MESSAGE value="0" />
     <MESSAGE value="Часть первая без итогов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Часть первая без итогов" />
+    <MESSAGE value="Добавил ребенка" />
+    <MESSAGE value="Добавил кота" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил кота" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -316,8 +328,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Practice$01_mastermind.coverage" NAME="01_mastermind Coverage Results" MODIFIED="1652630296607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_006" />
-    <SUITE FILE_PATH="coverage/Practice$03_man_ans_cat.coverage" NAME="03_man_ans_cat Coverage Results" MODIFIED="1652634147091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_007" />
-    <SUITE FILE_PATH="coverage/Practice$01_family.coverage" NAME="01_family Coverage Results" MODIFIED="1652639896509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_008" />
+    <SUITE FILE_PATH="coverage/Practice$01_mastermind.coverage" NAME="01_mastermind Coverage Results" MODIFIED="1652656294631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_006" />
+    <SUITE FILE_PATH="coverage/Practice$03_man_ans_cat.coverage" NAME="03_man_ans_cat Coverage Results" MODIFIED="1652649464636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_007" />
+    <SUITE FILE_PATH="coverage/Practice$01_family.coverage" NAME="01_family Coverage Results" MODIFIED="1652656329742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_008" />
   </component>
 </project>

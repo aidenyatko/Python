@@ -106,7 +106,7 @@ class Husband(Human):
     def gaming(self):
         self.happiness += 20
         self.fullness -= 10
-        cprint(f'{self.name} поиграл в WOT', color='magenta')
+        cprint(f'{self.name} поиграл в Assassin`s Creed', color='magenta')
 
     def act(self):
         if self.fullness > 10 and self.happiness > 0:
@@ -161,24 +161,24 @@ class Wife(Human):
             super(Wife, self).act()
 
 
-home = House()
-serge = Husband(name='Сережа', home=home)
-masha = Wife(name='Маша', home=home)
-
-for day in range(1, 366):
-    cprint('================== День {} =================='.format(day), color='red')
-    serge.act()
-    masha.act()
-    home.act()
-    cprint(serge, color='cyan')
-    cprint(masha, color='cyan')
-    cprint(home, color='cyan')
-
-cprint('=======================Итог за год==================', color='white')
-total_eaten_food = serge.eaten_food + masha.eaten_food
-total_made_money = serge.made_money
-total_fur_coat_bought = masha.fur_coat_bought
-cprint(f'{total_eaten_food} еды съедено, {total_made_money} денег заработано, {total_fur_coat_bought} шуб куплено')
+# home = House()
+# dima = Husband(name='Дима', home=home)
+# anya = Wife(name='Аня', home=home)
+#
+# for day in range(1, 366):
+#     cprint('================== День {} =================='.format(day), color='red')
+#     dima.act()
+#     anya.act()
+#     home.act()
+#     cprint(dima, color='cyan')
+#     cprint(anya, color='cyan')
+#     cprint(home, color='cyan')
+#
+# cprint('=======================Итог за год==================', color='white')
+# total_eaten_food = dima.eaten_food + anya.eaten_food
+# total_made_money = dima.made_money
+# total_fur_coat_bought = anya.fur_coat_bought
+# cprint(f'{total_eaten_food} еды съедено, {total_made_money} денег заработано, {total_fur_coat_bought} шуб куплено')
 
 
 # TODO после реализации первой части - отдать на проверку учителю
@@ -235,25 +235,36 @@ class Cat:
 #   спать,
 #
 # отличия от взрослых - кушает максимум 10 единиц еды,
-# степень счастья  - не меняется, всегда ==100 ;)
+# степень счастья - не меняется, всегда ==100 ;)
 
 class Child(Human):
 
-    def __init__(self, name):
-        super().__init__(name=name)
+    def __init__(self, name, home):
+        super().__init__(name=name, home=home)
         self.name = name
+        self.home = home
+        self.happiness = 100
 
     def __str__(self):
         return super().__str__()
 
-    def act(self):
-        pass
-
     def eat(self):
-        pass
+        if self.home.food >= 10:
+            self.fullness += 10
+            cprint(f'{self.name} поел(а)', color='blue')
+        else:
+            cprint('Нет еды', color='yellow')
 
     def sleep(self):
-        pass
+        self.fullness -= 10
+        cprint(f'{self.name} поспал', color='magenta')
+
+    def act(self):
+        if self.fullness <= 35:
+            self.eat()
+        else:
+            self.sleep()
+
 
 # TODO после реализации второй части - отдать на проверку учителем две ветки
 
@@ -265,22 +276,22 @@ class Child(Human):
 # отправить на проверку учителем.
 
 
-# home = House()
-# serge = Husband(name='Сережа', home=home)
-# masha = Wife(name='Маша', home=home)
-# kolya = Child(name='Коля', home=home)
+home = House()
+serge = Husband(name='Сережа', home=home)
+masha = Wife(name='Маша', home=home)
+kolya = Child(name='Коля', home=home)
 # murzik = Cat(name='Мурзик')
-#
-# for day in range(366):
-#     cprint('================== День {} =================='.format(day), color='red')
-#     serge.act()
-#     masha.act()
-#     kolya.act()
-#     murzik.act()
-#     cprint(serge, color='cyan')
-#     cprint(masha, color='cyan')
-#     cprint(kolya, color='cyan')
-#     cprint(murzik, color='cyan')
+
+for day in range(366):
+    cprint('================== День {} =================='.format(day), color='red')
+    serge.act()
+    masha.act()
+    kolya.act()
+    # murzik.act()
+    cprint(serge, color='cyan')
+    cprint(masha, color='cyan')
+    cprint(kolya, color='cyan')
+    # cprint(murzik, color='cyan')
 
 # Усложненное задание (делать по желанию)
 #
