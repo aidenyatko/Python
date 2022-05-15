@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from random import randint
+
 from termcolor import cprint
 
 
@@ -75,6 +77,10 @@ class Human:
         else:
             cprint('В доме нет еды', color='yellow')
 
+    def pet_the_cat(self):
+        self.happiness += 5
+        self.fullness -= 10
+
     def act(self):
         if (self.fullness <= 0) or (self.happiness <= 0):
             cprint(f'{self.name} умер', color='red')
@@ -113,7 +119,11 @@ class Husband(Human):
             if self.home.money < 770 or self.happiness > 20:
                 self.work()
             elif self.happiness <= 20:
-                self.gaming()
+                dice = randint(1, 4)
+                if dice == 1:
+                    self.gaming()
+                else:
+                    self.pet_the_cat()
         else:
             super(Husband, self).act()
 
@@ -154,7 +164,11 @@ class Wife(Human):
             elif self.home.food <= 420 <= self.home.money:
                 self.shopping()
             elif self.happiness <= 60 and self.home.money >= 350:
-                self.buy_fur_coat()
+                dice = randint(1, 4)
+                if dice == 1:
+                    self.buy_fur_coat()
+                else:
+                    self.pet_the_cat()
             else:
                 cprint(f'{self.name} ничего не делала')
         else:
@@ -162,22 +176,22 @@ class Wife(Human):
 
 
 home = House()
-serge = Husband(name='Сережа', home=home)
-masha = Wife(name='Маша', home=home)
+dima = Husband(name='Дима', home=home)
+anya = Wife(name='Аня', home=home)
 
 for day in range(1, 366):
     cprint('================== День {} =================='.format(day), color='red')
-    serge.act()
-    masha.act()
+    dima.act()
+    anya.act()
     home.act()
-    cprint(serge, color='cyan')
-    cprint(masha, color='cyan')
+    cprint(dima, color='cyan')
+    cprint(anya, color='cyan')
     cprint(home, color='cyan')
 
 cprint('=======================Итог за год==================', color='white')
-total_eaten_food = serge.eaten_food + masha.eaten_food
-total_made_money = serge.made_money
-total_fur_coat_bought = masha.fur_coat_bought
+total_eaten_food = dima.eaten_food + anya.eaten_food
+total_made_money = dima.made_money
+total_fur_coat_bought = anya.fur_coat_bought
 cprint(f'{total_eaten_food} еды съедено, {total_made_money} денег заработано, {total_fur_coat_bought} шуб куплено')
 
 
@@ -211,7 +225,7 @@ cprint(f'{total_eaten_food} еды съедено, {total_made_money} денег
 class Cat:
 
     def __init__(self, name):
-        pass
+        self.name = name
 
     def act(self):
         pass
