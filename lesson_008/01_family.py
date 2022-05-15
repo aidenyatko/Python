@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from random import randint
-
 from termcolor import cprint
 
 
@@ -63,6 +61,7 @@ class Human:
         self.fullness = 30
         self.happiness = 100
         self.home = home
+        self.eaten_food = 0
 
     def __str__(self):
         return f'Я {self.name}. Моя сытость равна {self.fullness}. А счастлив(а) я на все {self.happiness}'
@@ -72,6 +71,7 @@ class Human:
             self.fullness += 30
             self.home.food -= 30
             cprint(f'{self.name} поел(а)', color='blue')
+            self.eaten_food = self.eaten_food + 30
         else:
             cprint('В доме нет еды', color='yellow')
 
@@ -92,6 +92,7 @@ class Husband(Human):
         super().__init__(name=name, home=home)
         self.name = name
         self.home = home
+        self.made_money = 0
 
     def __str__(self):
         return super().__str__()
@@ -100,6 +101,7 @@ class Husband(Human):
         self.home.money += 150
         self.fullness -= 10
         cprint(f'{self.name} поработал', color='green')
+        self.made_money = self.made_money + 150
 
     def gaming(self):
         self.happiness += 20
@@ -107,7 +109,6 @@ class Husband(Human):
         cprint(f'{self.name} поиграл в WOT', color='magenta')
 
     def act(self):
-        dice = randint(1, 6)
         if self.fullness > 10 and self.happiness > 0:
             if self.home.money < 770 or self.happiness > 20:
                 self.work()
@@ -123,6 +124,7 @@ class Wife(Human):
         super().__init__(name=name, home=home)
         self.name = name
         self.home = home
+        self.fur_coat_bought = 0
 
     def __str__(self):
         return super().__str__()
@@ -138,6 +140,7 @@ class Wife(Human):
         self.happiness += 60
         self.fullness -= 10
         cprint(f'{self.name} купила шубу', color='yellow')
+        self.fur_coat_bought += 1
 
     def clean_house(self):
         self.home.mess -= 80
@@ -171,7 +174,11 @@ for day in range(1, 366):
     cprint(masha, color='cyan')
     cprint(home, color='cyan')
 
-cprint('=======================Итог за год==================', color='grey')
+cprint('=======================Итог за год==================', color='white')
+total_eaten_food = serge.eaten_food + masha.eaten_food
+total_made_money = serge.made_money
+total_fur_coat_bought = masha.fur_coat_bought
+cprint(f'{total_eaten_food} еды съедено, {total_made_money} денег заработано, {total_fur_coat_bought} шуб куплено')
 
 
 # TODO после реализации первой части - отдать на проверку учителю
