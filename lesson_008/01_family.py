@@ -185,24 +185,24 @@ class Wife(Human):
             super(Wife, self).act()
 
 
-home = House()
-serge = Husband(name='Сережа', home=home)
-masha = Wife(name='Маша', home=home)
-
-for day in range(1, 366):
-    cprint('================== День {} =================='.format(day), color='red')
-    serge.act()
-    masha.act()
-    home.act()
-    cprint(serge, color='cyan')
-    cprint(masha, color='cyan')
-    cprint(home, color='cyan')
-
-cprint('=======================Итог за год==================', color='white')
-total_eaten_food = serge.eaten_food + masha.eaten_food
-total_made_money = serge.made_money
-total_fur_coat_bought = masha.fur_coat_bought
-cprint(f'{total_eaten_food} еды съедено, {total_made_money} денег заработано, {total_fur_coat_bought} шуб куплено')
+# home = House()
+# serge = Husband(name='Сережа', home=home)
+# masha = Wife(name='Маша', home=home)
+#
+# for day in range(1, 366):
+#     cprint('================== День {} =================='.format(day), color='red')
+#     serge.act()
+#     masha.act()
+#     home.act()
+#     cprint(serge, color='cyan')
+#     cprint(masha, color='cyan')
+#     cprint(home, color='cyan')
+#
+# cprint('=======================Итог за год==================', color='white')
+# total_eaten_food = serge.eaten_food + masha.eaten_food
+# total_made_money = serge.made_money
+# total_fur_coat_bought = masha.fur_coat_bought
+# cprint(f'{total_eaten_food} еды съедено, {total_made_money} денег заработано, {total_fur_coat_bought} шуб куплено')
 
 
 # TODO после реализации первой части - отдать на проверку учителю
@@ -310,7 +310,6 @@ class Child(Human):
             self.sleep()
 
 
-
 # TODO после реализации второй части - отдать на проверку учителем две ветки
 
 
@@ -321,25 +320,27 @@ class Child(Human):
 # отправить на проверку учителем.
 
 
-
 home = House()
 dima = Husband(name='Дима', home=home)
 anya = Wife(name='Аня', home=home)
 masya = Cat(name='Мася', home=home)
+danya = Child(name='Даня', home=home)
 
 for day in range(1, 366):
     cprint('================== День {} =================='.format(day), color='red')
     dima.act()
     anya.act()
+    danya.act()
     masya.act()
     home.act()
     cprint(dima, color='cyan')
     cprint(anya, color='cyan')
     cprint(masya, color='cyan')
     cprint(home, color='cyan')
+    cprint(danya, color='cyan')
 
 cprint('=======================Итог за год==================', color='white')
-total_eaten_food = dima.eaten_food + anya.eaten_food
+total_eaten_food = dima.eaten_food + anya.eaten_food + danya.eaten_food
 total_made_money = dima.made_money
 total_fur_coat_bought = anya.fur_coat_bought
 cprint(f'{total_eaten_food} еды съедено, {total_made_money} денег заработано, {total_fur_coat_bought} шуб куплено')
