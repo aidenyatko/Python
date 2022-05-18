@@ -22,6 +22,31 @@
 # Требования к коду: он должен быть готовым к расширению функциональности. Делать сразу на классах.
 
 # TODO здесь ваш код
+import zipfile
+
+path = 'D:\\courses\\IT\\Python\\SkillBox_Python\\Practice\\lesson_009\\python_snippets\\voyna-i-mir.txt.zip'
+
+
+def unzip(path):
+    zfile = zipfile.ZipFile(file=path, mode='r')
+    for filename in zfile.namelist():
+        zfile.extract(filename)
+    return filename
+
+
+def make_letters_dict(filename):
+    if filename.endswith('.zip'):
+        filename = unzip(filename)
+    with open(filename, 'r') as file:
+        letters_dict = {}
+        for line in file:
+            for char in line:
+                if char.isalpha():
+                    if char in letters_dict:
+                        letters_dict[char] += 1
+                    else:
+                        letters_dict[char] = 1
+    return letters_dict
 
 # После выполнения первого этапа нужно сделать упорядочивание статистики
 #  - по частоте по возрастанию
