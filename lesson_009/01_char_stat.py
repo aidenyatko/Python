@@ -22,9 +22,8 @@
 # Требования к коду: он должен быть готовым к расширению функциональности. Делать сразу на классах.
 
 # TODO здесь ваш код
+import os.path
 import zipfile
-
-path = 'D:\\courses\\IT\\Python\\SkillBox_Python\\Practice\\lesson_009\\python_snippets\\voyna-i-mir.txt.zip'
 
 
 class MakeStat:
@@ -80,9 +79,15 @@ class MakeStat:
 +---------+----------+''')
 
 
+# path = 'D:\\courses\\IT\\Python\\SkillBox_Python\\Practice\\lesson_009\\python_snippets\\voyna-i-mir.txt.zip'
+path = input('Введите путь:\n')
+# file = r'os.path.normpath(path)'
+# print(path)
+
 make_stat = MakeStat(path=path)
 letters_list = make_stat.make_sorted_letters_list(4)
 make_stat.print_stat(letters_list)
+
 # После выполнения первого этапа нужно сделать упорядочивание статистики
 #  - по частоте по возрастанию
 #  - по алфавиту по возрастанию
