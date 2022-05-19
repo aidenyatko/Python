@@ -29,22 +29,19 @@ class LogStat:
         with open(self.logfile, 'r') as log:
             nok_count = 1
             prev_time = None
-            prev_line = None
             for line in log:
-                time = line[12:17]
-                if line.endswith('NOK\n') or line.endswith('NOK'):
-                    if prev_time == time:
+                time = line[:17]
+                if line.endswith('NOK') or line.endswith('NOK\n'):
+                    if prev_time == time and prev_time is not None:
                         nok_count += 1
-                        continue
-                    else:
+                    elif prev_time is not None:
+                        print(prev_time + ']' + ' ' + str(nok_count))
                         nok_count = 1
-                        prev_time = time
-                    if prev_line is None:
-                        prev_line = line
-                    stat = prev_line[:17] + '] ' + str(nok_count)
-                    if prev_time is not None:
-                        print(stat)
+                    prev_time = time
                     prev_line = line
+            if (line.endswith('OK') or line.endswith('OK\n')) and \
+                    (prev_line.endswith('NOK') or prev_line.endswith('NOK\n')):
+                print(prev_time + ']' + ' ' + str(nok_count))
 
 
 log_stat = LogStat('events.txt')
