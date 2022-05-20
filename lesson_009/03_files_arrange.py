@@ -53,12 +53,16 @@ class FilesOrganiser:
                 years_set.add(time.gmtime(secs)[0])
         return years_set
 
-
+    def make_years_dir(self):
+        years = self.get_years()
+        os.makedirs(str(self.point_dir))
+        for year in years:
+            os.makedirs(self.point_dir + '\\' + str(year))
 
 
 scan_dir = 'D:\\courses\\IT\\Python\\SkillBox_Python\\Practice\\lesson_009\\icons'
-file_organiser = FilesOrganiser('icons', '')
-file_organiser.make_years_dir()
+file_organiser = FilesOrganiser('icons', 'icons_by_year')
+
 # Усложненное задание (делать по желанию)
 # Нужно обрабатывать zip-файл, содержащий фотографии, без предварительного извлечения файлов в папку.
 # Основная функция должна брать параметром имя zip-файла и имя целевой папки.
