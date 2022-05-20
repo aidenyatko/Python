@@ -162,8 +162,8 @@ class Wife(Human):
         # cprint(f'{self.name} убирала дома', color='magenta')
 
     def buy_cat_food(self):
-        self.home.cat_food += (self.salary // 3)
-        self.home.money -= 35
+        self.home.cat_food += (self.salary // 2)
+        self.home.money -= (self.salary // 2)
         self.fullness -= 10
 
     def act(self):
@@ -172,7 +172,7 @@ class Wife(Human):
                 self.clean_house()
             elif self.home.food <= 210 <= self.home.money:
                 self.shopping()
-            elif self.home.cat_food <= 35:
+            elif self.home.cat_food <= (self.salary // 2):
                 self.buy_cat_food()
             elif self.home.money >= 350 and self.happiness <= 40:
                 self.buy_fur_coat()
