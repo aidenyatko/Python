@@ -35,7 +35,30 @@ import os, time, shutil
 # Требования к коду: он должен быть готовым к расширению функциональности. Делать сразу на классах.
 
 # TODO здесь ваш код
+from pprint import pprint
 
+
+class FilesOrganiser:
+
+    def __init__(self, dir_to_scan, point_dir):
+        self.dir_to_scan = dir_to_scan
+        self.point_dir = point_dir
+
+    def get_years(self):
+        years_set = set()
+        for dirpath, dirname, filename in os.walk(self.dir_to_scan):
+            for file in filename:
+                full_file_path = os.path.join(dirpath, file)
+                secs = os.path.getmtime(full_file_path)
+                years_set.add(time.gmtime(secs)[0])
+        return years_set
+
+
+
+
+scan_dir = 'D:\\courses\\IT\\Python\\SkillBox_Python\\Practice\\lesson_009\\icons'
+file_organiser = FilesOrganiser('icons', '')
+file_organiser.make_years_dir()
 # Усложненное задание (делать по желанию)
 # Нужно обрабатывать zip-файл, содержащий фотографии, без предварительного извлечения файлов в папку.
 # Основная функция должна брать параметром имя zip-файла и имя целевой папки.
