@@ -59,9 +59,22 @@ class FilesOrganiser:
         for year in years:
             os.makedirs(self.point_dir + '\\' + str(year))
 
+    def copy_files(self):
+        for dirpath, dirname, filename in os.walk(self.dir_to_scan):
+            for file in filename:
+                full_file_path = os.path.join(dirpath, file)
+                for year in self.get_years():
+                    filetimesec = os.path.getmtime(full_file_path)
+                    filetime = time.gmtime(filetimesec)
+                    if filetime[0] == year:
+                        shutil.copy2(src=full_file_path, dst=self.point_dir + '\\' + str(year))
+
 
 scan_dir = 'D:\\courses\\IT\\Python\\SkillBox_Python\\Practice\\lesson_009\\icons'
 file_organiser = FilesOrganiser('icons', 'icons_by_year')
+file_organiser.get_years()
+file_organiser.make_years_dir()
+file_organiser.copy_files()
 
 # Усложненное задание (делать по желанию)
 # Нужно обрабатывать zip-файл, содержащий фотографии, без предварительного извлечения файлов в папку.
