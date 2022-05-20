@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="Не працюе">
+    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="Логстат на классе поминутно">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_009/02_log_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_009/02_log_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_009/events.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_009/events.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_008/01_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_008/01_family.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,14 +22,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.02_log_parser">
+}</component>
+  <component name="RunManager" selected="Python.01_family">
     <configuration name="01_char_stat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -45,6 +44,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_009/01_char_stat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="01_family" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_008" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_008/01_family.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -77,8 +98,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.02_log_parser" />
+        <item itemvalue="Python.01_family" />
         <item itemvalue="Python.01_char_stat" />
+        <item itemvalue="Python.02_log_parser" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +133,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652980193834</updated>
-      <workItem from="1652980196377" duration="9190000" />
+      <workItem from="1652980196377" duration="12336000" />
+      <workItem from="1653053387624" duration="3613000" />
     </task>
     <task id="LOCAL-00004" summary="Не працюе">
       <created>1652987427588</created>
@@ -120,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652987427589</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Логстат на классе поминутно">
+      <created>1652989501493</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652989501493</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,24 +184,25 @@
     <MESSAGE value="Негибкий код на классах" />
     <MESSAGE value="Гибкий код на классах" />
     <MESSAGE value="Не працюе" />
-    <option name="LAST_COMMIT_MESSAGE" value="Не працюе" />
+    <MESSAGE value="Логстат на классе поминутно" />
+    <option name="LAST_COMMIT_MESSAGE" value="Логстат на классе поминутно" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/lesson_009/01_char_stat.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/lesson_008/01_family.py</url>
+          <line>342</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Practice$01_mastermind.coverage" NAME="01_mastermind Coverage Results" MODIFIED="1652907885175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_006" />
-    <SUITE FILE_PATH="coverage/Practice$01_char_stat.coverage" NAME="01_char_stat Coverage Results" MODIFIED="1652923542721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
     <SUITE FILE_PATH="coverage/Practice$02_log_parser.coverage" NAME="02_log_parser Coverage Results" MODIFIED="1652989452931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
+    <SUITE FILE_PATH="coverage/Practice$01_char_stat.coverage" NAME="01_char_stat Coverage Results" MODIFIED="1652993283011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
     <SUITE FILE_PATH="coverage/Practice$03_man_ans_cat.coverage" NAME="03_man_ans_cat Coverage Results" MODIFIED="1652649464636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_007" />
-    <SUITE FILE_PATH="coverage/Practice$01_family.coverage" NAME="01_family Coverage Results" MODIFIED="1652716598007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_008" />
+    <SUITE FILE_PATH="coverage/Practice$01_family.coverage" NAME="01_family Coverage Results" MODIFIED="1653056860332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_008" />
   </component>
 </project>
