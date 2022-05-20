@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="Добавил инциденты и статистику к выживанию при них">
+    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="+ Задание от Кельтаса">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_009/02_log_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_009/02_log_parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,7 +36,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.01_family">
+  <component name="RunManager" selected="Python.02_log_parser">
     <configuration name="01_char_stat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.01_family" />
-        <item itemvalue="Python.01_char_stat" />
         <item itemvalue="Python.02_log_parser" />
+        <item itemvalue="Python.01_char_stat" />
+        <item itemvalue="Python.01_family" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652980193834</updated>
       <workItem from="1652980196377" duration="12336000" />
-      <workItem from="1653053387624" duration="8323000" />
+      <workItem from="1653053387624" duration="10435000" />
     </task>
     <task id="LOCAL-00004" summary="Не працюе">
       <created>1652987427588</created>
@@ -170,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653060317171</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="+ Задание от Кельтаса">
+      <created>1653067935411</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653067935411</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +223,8 @@
     <MESSAGE value="Добавил генерацию котов, симуляция жихни теперь класс" />
     <MESSAGE value="Забалансил поккупку еды котам. Теперь их может быть больше" />
     <MESSAGE value="Добавил инциденты и статистику к выживанию при них" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил инциденты и статистику к выживанию при них" />
+    <MESSAGE value="+ Задание от Кельтаса" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Задание от Кельтаса" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -223,8 +239,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Practice$01_mastermind.coverage" NAME="01_mastermind Coverage Results" MODIFIED="1652907885175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_006" />
-    <SUITE FILE_PATH="coverage/Practice$02_log_parser.coverage" NAME="02_log_parser Coverage Results" MODIFIED="1652989452931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
-    <SUITE FILE_PATH="coverage/Practice$01_char_stat.coverage" NAME="01_char_stat Coverage Results" MODIFIED="1652993283011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
+    <SUITE FILE_PATH="coverage/Practice$01_char_stat.coverage" NAME="01_char_stat Coverage Results" MODIFIED="1653069032242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
+    <SUITE FILE_PATH="coverage/Practice$02_log_parser.coverage" NAME="02_log_parser Coverage Results" MODIFIED="1653069744532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
     <SUITE FILE_PATH="coverage/Practice$03_man_ans_cat.coverage" NAME="03_man_ans_cat Coverage Results" MODIFIED="1652649464636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_007" />
     <SUITE FILE_PATH="coverage/Practice$01_family.coverage" NAME="01_family Coverage Results" MODIFIED="1653060261656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_008" />
   </component>

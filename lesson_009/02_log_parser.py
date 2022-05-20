@@ -25,12 +25,20 @@ class LogStat:
     def __init__(self, logfile):
         self.logfile = logfile
 
-    def get_stat_by_min(self):
+    def get_stat_by_time(self, way):
         with open(self.logfile, 'r') as log:
+            if way == 'min':
+                sort = 17
+            elif way == 'hour':
+                sort = 14
+            elif way == 'month':
+                sort = 8
+            elif way == 'year':
+                sort = 5
             nok_count = 1
             prev_time = None
             for line in log:
-                time = line[:17]
+                time = line[:sort]
                 if line.endswith('NOK') or line.endswith('NOK\n'):
                     if prev_time == time and prev_time is not None:
                         nok_count += 1
@@ -45,7 +53,7 @@ class LogStat:
 
 
 log_stat = LogStat('events.txt')
-log_stat.get_stat_by_min()
+log_stat.get_stat_by_time(way='year')
 # После выполнения первого этапа нужно сделать группировку событий
 #  - по часам
 #  - по месяцу
