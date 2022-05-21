@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="Сделал функцию создания целевой папки с подпапками готов">
+    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="Сделал функцию копирования файлов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_009/03_files_arrange.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_009/03_files_arrange.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_009/class_SortedDict.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_009/class_SortedDict.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +18,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="de0be3573ec35f753bf6b4b461db920652b4ae17" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,7 +43,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.03_files_arrange">
+  <component name="RunManager" selected="Python.class_SortedDict">
     <configuration name="01_char_stat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,12 +132,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="class_SortedDict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_009" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_009/class_SortedDict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.class_SortedDict" />
         <item itemvalue="Python.03_files_arrange" />
         <item itemvalue="Python.02_log_parser" />
-        <item itemvalue="Python.01_char_stat" />
         <item itemvalue="Python.01_family" />
+        <item itemvalue="Python.01_char_stat" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652980193834</updated>
       <workItem from="1652980196377" duration="12336000" />
-      <workItem from="1653053387624" duration="21902000" />
+      <workItem from="1653053387624" duration="27336000" />
     </task>
     <task id="LOCAL-00004" summary="Не працюе">
       <created>1652987427588</created>
@@ -229,7 +259,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653082240415</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Сделал функцию копирования файлов">
+      <created>1653084150890</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653084150890</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Сделал функцию копирования файлов">
+      <created>1653084242806</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653084242806</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +315,8 @@
     <MESSAGE value="Теперь сортировка бывает разной" />
     <MESSAGE value="сделал функицю получения годов" />
     <MESSAGE value="Сделал функцию создания целевой папки с подпапками готов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал функцию создания целевой папки с подпапками готов" />
+    <MESSAGE value="Сделал функцию копирования файлов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал функцию копирования файлов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -280,6 +325,11 @@
           <url>file://$PROJECT_DIR$/lesson_008/01_family.py</url>
           <line>364</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson_009/class_SortedDict.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -291,5 +341,6 @@
     <SUITE FILE_PATH="coverage/Practice$03_man_ans_cat.coverage" NAME="03_man_ans_cat Coverage Results" MODIFIED="1652649464636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_007" />
     <SUITE FILE_PATH="coverage/Practice$03_files_arrange.coverage" NAME="03_files_arrange Coverage Results" MODIFIED="1653084099858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
     <SUITE FILE_PATH="coverage/Practice$01_family.coverage" NAME="01_family Coverage Results" MODIFIED="1653060261656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_008" />
+    <SUITE FILE_PATH="coverage/Practice$class_SortedDict.coverage" NAME="class_SortedDict Coverage Results" MODIFIED="1653091992280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
   </component>
 </project>
