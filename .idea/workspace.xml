@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="init">
+    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_011/01_shapes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_011/01_shapes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_011/02_prime_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_011/02_prime_numbers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.01_shapes">
+  <component name="RunManager" selected="Python.02_prime_numbers">
     <configuration name="01_fifth_element" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,7 +133,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="class_SortedDict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="02_prime_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,12 +141,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_009" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_011" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_009/class_SortedDict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_011/02_prime_numbers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.02_prime_numbers" />
         <item itemvalue="Python.01_shapes" />
         <item itemvalue="Python.01_mastermind" />
         <item itemvalue="Python.02_groundhog_day" />
         <item itemvalue="Python.01_fifth_element" />
-        <item itemvalue="Python.class_SortedDict" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +204,7 @@
       <workItem from="1653567599553" duration="1139000" />
       <workItem from="1653570621354" duration="3438000" />
       <workItem from="1653604470594" duration="750000" />
-      <workItem from="1653626991653" duration="1117000" />
+      <workItem from="1653626991653" duration="1651000" />
     </task>
     <task id="LOCAL-00004" summary="Не працюе">
       <created>1652987427588</created>
@@ -311,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653435464251</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="1">
+      <created>1653628330995</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1653628330995</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +365,8 @@
     <MESSAGE value="готово" />
     <MESSAGE value="чет неясно" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -391,6 +399,7 @@
     <SUITE FILE_PATH="coverage/Practice$03_files_arrange.coverage" NAME="03_files_arrange Coverage Results" MODIFIED="1653084099858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
     <SUITE FILE_PATH="coverage/Practice$01_family.coverage" NAME="01_family Coverage Results" MODIFIED="1653060261656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_008" />
     <SUITE FILE_PATH="coverage/Practice$class_SortedDict.coverage" NAME="class_SortedDict Coverage Results" MODIFIED="1653091992280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
-    <SUITE FILE_PATH="coverage/Practice$01_shapes.coverage" NAME="01_shapes Coverage Results" MODIFIED="1653628119557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_011" />
+    <SUITE FILE_PATH="coverage/Practice$01_shapes.coverage" NAME="01_shapes Coverage Results" MODIFIED="1653628317361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_011" />
+    <SUITE FILE_PATH="coverage/Practice$02_prime_numbers.coverage" NAME="02_prime_numbers Coverage Results" MODIFIED="1653628443801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_011" />
   </component>
 </project>
