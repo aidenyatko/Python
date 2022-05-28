@@ -6,13 +6,17 @@
 
 def get_prime_numbers(n):
     prime_numbers = []
-    for number in range(2, n+1):
-        for prime in prime_numbers:
-            if number % prime == 0:
+    for possible_prime in range(2, n + 1):
+        is_prime = True
+        a = int(possible_prime ** 0.5) + 1
+        for num in range(2, a):
+            if possible_prime % num == 0:
+                is_prime = False
                 break
-            else:
-                prime_numbers.append(number)
+        if is_prime:
+            prime_numbers.append(possible_prime)
     return prime_numbers
+
 
 # Часть 1
 # На основе алгоритма get_prime_numbers создать класс итерируемых объектов,
@@ -20,11 +24,12 @@ def get_prime_numbers(n):
 #
 # Распечатать все простые числа до 10000 в столбик
 
-
+# TODO здесь ваш код
 class PrimeNumbers:
     pass
-    # TODO здесь ваш код
 
+
+# print(get_prime_numbers(100))
 
 prime_number_iterator = PrimeNumbers(n=10000)
 for number in prime_number_iterator:
@@ -41,10 +46,8 @@ def prime_numbers_generator(n):
     pass
     # TODO здесь ваш код
 
-
-for number in prime_numbers_generator(n=10000):
-    print(number)
-
+# for number in prime_numbers_generator(n=10000):
+#     print(number)
 
 # Часть 3
 # Написать несколько функций-фильтров, которые выдает True, если число:
