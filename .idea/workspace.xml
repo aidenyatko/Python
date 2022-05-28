@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="init_2">
+    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="сделал норм ген">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_011/02_prime_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_011/02_prime_numbers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +208,7 @@
       <workItem from="1653626991653" duration="2643000" />
       <workItem from="1653631282230" duration="339000" />
       <workItem from="1653701696812" duration="1078000" />
-      <workItem from="1653736413161" duration="4018000" />
+      <workItem from="1653736413161" duration="4883000" />
     </task>
     <task id="LOCAL-00004" summary="Не працюе">
       <created>1652987427588</created>
@@ -329,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653628682793</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="сделал норм ген">
+      <created>1653742880481</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1653742880481</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +385,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="1" />
     <MESSAGE value="init_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="init_2" />
+    <MESSAGE value="сделал норм ген" />
+    <option name="LAST_COMMIT_MESSAGE" value="сделал норм ген" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
