@@ -105,6 +105,17 @@ def is_happy(num):
         return False
 
 
-# for number in prime_numbers_generator(n=10000):
+def is_palindrom(num):
+    number = str(num)
+    if cut_number(number)[0] == cut_number(number)[1][::-1]:
+        return True
+    else:
+        return False
+
+
+# for number in prime_numbers_generator(n=100000):
 #     if is_happy(number):
+#         print(number)
+# for number in prime_numbers_generator(n=100000):
+#     if is_palindrom(number):
 #         print(number)
