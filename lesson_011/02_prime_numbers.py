@@ -59,14 +59,14 @@ class PrimeNumbers:
 def prime_numbers_generator(n):
     nums = get_prime_numbers(n)
     while nums:
-        next = nums.pop(0)
-        yield next
+        next_num = nums.pop(0)
+        yield next_num
 
     # TODO здесь ваш код
 
 
-for number in prime_numbers_generator(n=10000):
-    print(number)
+# for number in prime_numbers_generator(n=10000):
+#     print(number)
 
 # Часть 3
 # Написать несколько функций-фильтров, которые выдает True, если число:
@@ -83,3 +83,28 @@ for number in prime_numbers_generator(n=10000):
 # простых счастливых палиндромных чисел и так далее. Придумать не менее 2‑х способов.
 #
 # Подсказка: возможно, нужно будет добавить параметр в итератор/генератор.
+def sum_num(numbers):
+    sum_of_numbers = 0
+    for number in numbers:
+        sum_of_numbers += int(number)
+    return sum_of_numbers
+
+
+def cut_number(num):
+    half_len = len(num) // 2
+    num_begin = num[:half_len]
+    num_end = num[-half_len:]
+    return [num_begin, num_end]
+
+
+def is_happy(num):
+    number = str(num)
+    if sum_num(cut_number(number)[0]) == sum_num(cut_number(number)[1]):
+        return True
+    else:
+        return False
+
+
+# for number in prime_numbers_generator(n=10000):
+#     if is_happy(number):
+#         print(number)
