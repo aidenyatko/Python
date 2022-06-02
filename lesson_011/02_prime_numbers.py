@@ -24,7 +24,6 @@ def get_prime_numbers(n):
 #
 # Распечатать все простые числа до 10000 в столбик
 
-# TODO здесь ваш код
 class PrimeNumbers:
 
     def __init__(self, n, i=0):
@@ -39,16 +38,16 @@ class PrimeNumbers:
     def __next__(self):
         self.i += 1
         if self.i <= self.n:
-            return self.number_list[self.i-1]
+            return self.number_list[self.i - 1]
         else:
             raise StopIteration
 
 
-# print(get_prime_numbers(100))
+# print(get_prime_numbers(10000))
 
-prime_number_iterator = PrimeNumbers(n=10000)
-for number in prime_number_iterator:
-    print(number)
+# prime_number_iterator = PrimeNumbers(n=10000)
+# for number in prime_number_iterator:
+#     print(number)
 
 
 # TODO после подтверждения части 1 преподавателем, можно делать
@@ -58,11 +57,16 @@ for number in prime_number_iterator:
 
 
 def prime_numbers_generator(n):
-    pass
+    nums = get_prime_numbers(n)
+    while nums:
+        next = nums.pop(0)
+        yield next
+
     # TODO здесь ваш код
 
-# for number in prime_numbers_generator(n=10000):
-#     print(number)
+
+for number in prime_numbers_generator(n=10000):
+    print(number)
 
 # Часть 3
 # Написать несколько функций-фильтров, которые выдает True, если число:

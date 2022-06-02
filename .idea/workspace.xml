@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="сделал норм ген">
+    <list default="true" id="b9027a06-746d-48f2-a766-1719b3af9538" name="Changes" comment="доделал класс простых чисел">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson_011/02_prime_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_011/02_prime_numbers.py" afterDir="false" />
     </list>
@@ -212,7 +212,7 @@
       <workItem from="1653774332409" duration="52000" />
       <workItem from="1654106217516" duration="1690000" />
       <workItem from="1654166442682" duration="69000" />
-      <workItem from="1654172326709" duration="665000" />
+      <workItem from="1654172326709" duration="1651000" />
     </task>
     <task id="LOCAL-00004" summary="Не працюе">
       <created>1652987427588</created>
@@ -340,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653742880481</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="доделал класс простых чисел">
+      <created>1654173024455</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1654173024455</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +397,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="init_2" />
     <MESSAGE value="сделал норм ген" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделал норм ген" />
+    <MESSAGE value="доделал класс простых чисел" />
+    <option name="LAST_COMMIT_MESSAGE" value="доделал класс простых чисел" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -430,6 +438,6 @@
     <SUITE FILE_PATH="coverage/Practice$01_family.coverage" NAME="01_family Coverage Results" MODIFIED="1653060261656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_008" />
     <SUITE FILE_PATH="coverage/Practice$class_SortedDict.coverage" NAME="class_SortedDict Coverage Results" MODIFIED="1653091992280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_009" />
     <SUITE FILE_PATH="coverage/Practice$01_shapes.coverage" NAME="01_shapes Coverage Results" MODIFIED="1653628317361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_011" />
-    <SUITE FILE_PATH="coverage/Practice$02_prime_numbers.coverage" NAME="02_prime_numbers Coverage Results" MODIFIED="1654172984497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_011" />
+    <SUITE FILE_PATH="coverage/Practice$02_prime_numbers.coverage" NAME="02_prime_numbers Coverage Results" MODIFIED="1654173772826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lesson_011" />
   </component>
 </project>
