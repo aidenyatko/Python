@@ -26,7 +26,22 @@ def get_prime_numbers(n):
 
 # TODO здесь ваш код
 class PrimeNumbers:
-    pass
+
+    def __init__(self, n, i=0):
+        self.i = i
+        self.number_list = get_prime_numbers(n)
+        self.n = n
+
+    def __iter__(self):
+        self.i = 0
+        return self
+
+    def __next__(self):
+        self.i += 1
+        if self.i <= self.n:
+            return self.number_list[self.i-1]
+        else:
+            raise StopIteration
 
 
 # print(get_prime_numbers(100))
